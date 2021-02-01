@@ -13,31 +13,38 @@
 <div id="snippet">
 	<pre>
 		<code class="python">
-#Reading inputs
-with open('inputs/day1.txt') as f:
-    input = f.readlines()
-numlist=[]
-for i in input:
-    numlist.append(int(i.split("\n")[0]))
+    #Reading inputs
+    with open('inputs/day3.txt') as f:
+        input = f.readlines()
+    list=[]
+    for i in input:
+        list.append(i.split("\n")[0])
 
-#First part
-def day1part1(input):
-    for i in range(len(input)):
-        for j in range(i+1,len(input)):
-            sum = input[i]+input[j]
-            if sum == 2020:
-                answer = input[i]*input[j]
-    return answer
+    #First part
+    def day3part1(input):
+        count = 0
+        j=0
+        for i in range (0,len(input)):
+            k=j%(len(input[0]))
+            evaluator = input[i][k]
+            if evaluator == "#":
+                count = count + 1
+            j=j+3    
+            #print(i,k)
+        return count
 
-#Second part
-def day1part2(input):
-    for i in range(len(input)):
-        for j in range(i+1,len(input)):
-            for k in range(i+2,len(input)):
-                sum = input[i]+input[j]+input[k]
-                if sum == 2020:
-                    answer = input[i]*input[j]*input[k]
-    return answer
+    #Second part
+    def day3part2(right,down,input):
+        count = 0
+        j=0
+        for i in range (0,len(input),down):
+            k=j%(len(input[0]))
+            evaluator = input[i][k]
+            if evaluator == "#":
+                count = count + 1
+            j=j+right    
+            #print(i,k)
+        return count
 		</code>
 	</pre>
 </div>
