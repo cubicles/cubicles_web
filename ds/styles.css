@@ -8,23 +8,26 @@ h1{
     padding: 20px;
     font-family: Helvetica, sans-serif;
 }
-#daylist{
-	height: 50px;
-	margin: auto;
-	width: 65%;
-  	border: 0px solid green;
-  	padding: 0px 22px 0px 22px;
-  	max-width: 960px;
-  	text-align: center;
+#wrapper {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    border: 1px solid black;
+    float: left;
 }
-ul {
-    display: inline-block;
-    padding-left: 0;
-    text-align: left;
+#first {
+    width: 400px;
+    border: 1px solid red;
+    max-width: 500px;
+    float: left;
 }
-li{
-  list-style: none;
+#second {
+    text-align: center;
+    border: 1px solid green;
+    width: 400px;
+    max-width: 500px;
+    float: left;
 }
-a{
-  font-family: Helvetica, sans-serif;
+.centerwrapper{
+    margin: auto;
 }
