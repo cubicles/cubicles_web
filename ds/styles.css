@@ -31,3 +31,7 @@ h1{
 .centerwrapper{
     margin: auto;
 }
+a,p{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
