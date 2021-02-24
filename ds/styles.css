@@ -8,29 +8,6 @@ h1{
     padding: 20px;
     font-family: Helvetica, sans-serif;
 }
-#wrapper {
-    text-align: center;
-    width: 100%;
-    justify-content: center;
-    border: 1px solid black;
-    float: left;
-}
-#first {
-    width: 400px;
-    border: 1px solid red;
-    max-width: 500px;
-    float: left;
-}
-#second {
-    text-align: center;
-    border: 1px solid green;
-    width: 400px;
-    max-width: 500px;
-    float: left;
-}
-.centerwrapper{
-    margin: auto;
-}
 a,p{
     text-align: center;
     font-family: Helvetica, sans-serif;
